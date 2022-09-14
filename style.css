@@ -2,12 +2,20 @@
     margin-left: 0px;
     margin-top: 0px;
 }
+p a{
+    text-decoration: none;
+    color: white;
+}
 .sidebar{
     height: 580px;
     width: 10%;
     left: 0px;
     position: fixed;
-    background-color: rgb(211, 211, 211);
+    background-color: green;
+}
+#listcontent .list a:hover{
+    background: yellowgreen;
+    padding: 12px;
 }
 .sidebar ul li{
     list-style: none;
@@ -17,18 +25,64 @@
     margin-left: -17px;
 }
 #navbar{
-    background-color: rgb(136, 136, 136);
+    background-color: green;
     height: 80px;
     top: 0;
     position: fixed;
     width: 100%;
 }
+.list a{
+    color: white;
+}
+.button{
+    position: relative;
+    display: inline-block;
+}
+#content{
+    display: none;
+    position: absolute;
+    background: rgb(105, 201, 105);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#content ul{
+    list-style: none;
+}
+#content a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    text-align: justify;
+}
+#content a:hover{
+    background-color: yellowgreen;
+}
+.button:hover #content{
+    display:block;
+}
+#navbar .list {
+    list-style: none;
+    display: inline-flex;
+}
+#listcontent{
+    margin-top: -45px;
+    position: fixed;
+}
+.home{
+    margin-left: 400px;
+}
+#navbar ul a{
+    text-decoration: none;
+    margin-left: 45px;
+}
 #navbar h1, #navbar h5{
     margin-left: 12%;
 }
 #footer{
-    width: 100%;
-    height: 80px;
+    width: 89.6%;
+    height: 480px;
     background-color: black;
     color: white;
     z-index: 1;
@@ -45,4 +99,8 @@
 .main{
     margin-left: 11%;
     margin-top: 80px;
+}
+.column2{
+    margin-left: 375px;
+    margin-top: -210px;
 }
